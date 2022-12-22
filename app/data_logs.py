@@ -30,6 +30,8 @@ def reading_logs():
 
 def creating_logs():
     """Функция для записи логов в динамические ячейки"""
+    with open('static/logs.txt') as log:
+        text = log.read()
     values = get_service().spreadsheets().values().batchUpdate(
         spreadsheetId=sheet_id,
         body={
@@ -37,7 +39,7 @@ def creating_logs():
             "data": [
                 {"range": "A1:A1",
                  "majorDimension": "ROWS",
-                 "values": [["Test logs"]]}
+                 "values": [[text]]}
             ]
         }
     )
