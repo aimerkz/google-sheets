@@ -12,3 +12,25 @@
 4. Сохраняем данные в ячейку
 5. Через сутки процесс повторяется
 
+### Инструкция к запуску:
+- Клонируйте репозиторий:
+```sh
+git clone https://github.com/aimerkz/google-sheets.git
+```
+- Создайте и активируйте виртуальное окружение:
+```sh
+python3 -m ./venv venv
+source venv/bin/activate
+```
+- Установите зависимости:
+```sh
+pip3 install -r requirements.txt
+```
+- Запустите скрипт:
+```sh
+python3 main.py
+Введите read, если хотите прочесть данные из таблицы, нажмите Enter.
+Введите load, если хотите загрузить данные в ячейку, нажмите Enter.
+```
+- Посмотрите таблицу, перейдя по ссылке: \
+[google-sheets](https://docs.google.com/spreadsheets/d/1S3PmZ6MaZV2Hv190VecpFzeNn8Jp4VY85b9G9GSPK-4)

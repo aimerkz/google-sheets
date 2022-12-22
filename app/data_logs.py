@@ -28,7 +28,7 @@ def reading_logs():
     pprint(resp)
 
 
-def creating_logs(range):
+def creating_logs():
     """Функция для записи логов в динамические ячейки"""
     values = get_service().spreadsheets().values().batchUpdate(
         spreadsheetId=sheet_id,
