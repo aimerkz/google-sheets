@@ -17,6 +17,10 @@
 ```sh
 git clone https://github.com/aimerkz/google-sheets.git
 ```
+- Перейдите в директорию google-sheets:
+```sh
+cd google-sheets
+```
 - Создайте и активируйте виртуальное окружение:
 ```sh
 python3 -m ./venv venv
