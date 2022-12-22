@@ -16,7 +16,7 @@ def main():
     if command == 'read':
         commands[command]()
     elif command == 'load':
-        s.enter(3, 1, main)
+        s.enter(86400, 1, main)
         commands[command]()
         print('OK')
     else:
